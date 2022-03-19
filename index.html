@@ -5,57 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="nav-container">
         <nav>
-            <button class="btn" id="btnOpenRegister">Register</button>
-            <button class="btn" id="btnOpenLogin">Login</button>
+            <button class="btn-menu" id="btnOpenRegister">Register</button>
+            <button class="btn-menu" id="btnOpenLogin">Login</button>
         </nav>
     </div>
     <div class="register-modal-container" id="register-modal-container">
         <div class="register-modal">
-                <form action="">
-                        <div>
+                <form action="">    
                             <label>New username:</label>
-                            <input type="text">
-                        </div>
-                        <div>
+                            <input type="text" id="username">
                             <label>New password:</label>
                             <input type="password">
-                        </div>
-                        <div>
                             <label>Repeat password:</label>
                             <input type="password">
-                        </div>
-                        <div>
                             <label>English classes:</label>
-                            <input type="radio">
+                            <input id="btnEnglish" type="radio" value="1">
                             <label>Career classes:</label>
-                            <input type="radio">
-                        </div>
-                        <div>
+                            <input id="btnCareer" type="radio" value="2">
+                            <label for="">Choose the course</label>
+                            <select id="englishOption" class="english-options" name="english-options">
+                                <option class="" value="">ESL</option>
+                                <option class="" value="">Tofel</option>
+                                <option class="" value="">IELS</option>
+                            </select>
+                            <select class="career-options" id="careerOption" name="careerOptions">
+                                <option class="" value="">Web Development</option>
+                                <option class="" value="">User Interface</option>
+                                <option class="" value="">User Experience</option>
+                                <option class="" value="">Hospitality Managment</option>
+                                <option class="" value="">Digital Marketing</option>
+                            </select>
                             <button class="btn" type="button" id="btnCloseRegister">Back</button>
-                        </div>
+                            <button class="btn-register" type="button" id="btnRegister">Register</button>
                 </form>
         </div>
     </div>
     <div class="login-modal-container" id="login-modal-container">
         <div class="login-modal">
                 <form action="">
-                        <div>
                             <label>Username:</label>
                             <input type="text">
-                        </div>
-                        <div>
                             <label>Password:</label>
                             <input type="password">
-                        </div>
-                        <div>
-                            <button class="btn" type="button" id="btnCloseLogin">Back</button>
-                            <button class="btn" type="button" id="btnLogin">Join</button>
-                        </div>
+                            <button class="btn-login" type="button" id="btnCloseLogin">Back</button>
+                            <button class="btn-login" type="button" id="btnLogin">Join</button>
                 </form>
         </div>
     </div>
