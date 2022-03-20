@@ -75,3 +75,15 @@ const englishcourselist = {
 
 
 console.log(EnglishClass)
+
+
+//Validate the boxes if an input box is empty the form wont submit 
+function validateBox(){
+    var x = document.forms["myform"]["fullname"].value;
+    var y = document.forms["myform"]["username"].value;
+    if (x =="", y == ""){
+      alert("Please Fill out the required boxes");
+      return false;
+    }
+}
+
